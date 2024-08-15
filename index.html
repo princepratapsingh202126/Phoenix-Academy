@@ -1,3 +1,71 @@
+<!DOCTYPE html>
 <html>
-  this is also a home
+<head>
+	<title>Advanced E-Commerce Website</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<ul>
+				<li><a href="#" class="nav-link">Home</a></li>
+				<li><a href="#" class="nav-link">About</a></li>
+				<li><a href="#" class="nav-link">Contact</a></li>
+				<li><a href="#" class="nav-link cart-link">Cart (0)</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="hero">
+			<h1>Welcome to our E-Commerce Website</h1>
+			<p>Explore our collection of products</p>
+			<button class="btn explore-btn">Explore Now</button>
+		</section>
+		
+		<section class="product-grid">
+			<div class="product-grid-container">
+				<div class="product" data-product-id="1">
+					<img src="product1.jpg" alt="Product 1">
+					<div class="product-info">
+						<h2>Product 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p class="price">$19.99</p>
+						<button class="btn add-to-cart-btn">Add to Cart</button>
+					</div>
+				</div>
+				<div class="product" data-product-id="2">
+					<img src="product2.jpg" alt="Product 2">
+					<div class="product-info">
+						<h2>Product 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p class="price">$29.99</p>
+						<button class="btn add-to-cart-btn">Add to Cart</button>
+					</div>
+				</div>
+				<div class="product" data-product-id="3">
+					<img src="product3.jpg" alt="Product 3">
+					<div class="product-info">
+						<h2>Product 3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p class="price">$39.99</p>
+						<button class="btn add-to-cart-btn">Add to Cart</button>
+					</div>
+				</div>
+				<!-- Add more products here -->
+			</div>
+		</section>
+		
+		<section class="cart">
+			<h2>Cart</h2>
+			<ul class="cart-list">
+				<!-- Cart items will be displayed here -->
+			</ul>
+			<p class="cart-total">Total: $0.00</p>
+			<button class="btn checkout-btn">Checkout</button>
+		</section>
+	</main>
+	
+	<script src="script.js"></script>
+</body>
 </html>
