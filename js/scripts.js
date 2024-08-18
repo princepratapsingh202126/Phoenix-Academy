@@ -9,7 +9,7 @@
 
 <script>
   (function() {
-    emailjs.init("YOUR_USER_ID");
+    emailjs.init("Prince Pratap Singh");
   })();
 
   const form = document.getElementById('contactForm');
@@ -28,7 +28,7 @@
       message: 'Notify Me!'
     };
 
-    emailjs.send(serviceId, templateId, templateParams, userId)
+    emailjs.send(service_1x0wnms, template_fgfi4a3, templateParams, userId)
       .then((response) => {
         console.log('Email sent successfully!');
       })
