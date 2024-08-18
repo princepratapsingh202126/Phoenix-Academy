@@ -64,10 +64,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.0/dist/email.min.js"></script>
         <script>
             const form = document.getElementById('contactForm');
@@ -77,17 +73,17 @@
                 e.preventDefault();
                 const email = document.getElementById('email').value;
                 const templateParams = {
-                    to_name: 'Your Name',
+                    to_name: 'Prince Pratap Singh',
                     from_name: email,
-                    to_email: 'your_email@example.com',
+                    to_email: 'princepratapsingh202126@gmail.com',
                     message_html: 'You have a new subscriber!',
                 };
 
                 emailjs.send(
-                    'YOUR_SERVICE_ID',
-                    'YOUR_TEMPLATE_ID',
+                    'service_1x0wnms',
+                    'template_fgfi4a3',
                     templateParams,
-                    'YOUR_USER_ID'
+                    'Prince Pratap Singh'
                 ).then(
                     (response) => {
                         console.log('SUCCESS!', response.status, response.text);
